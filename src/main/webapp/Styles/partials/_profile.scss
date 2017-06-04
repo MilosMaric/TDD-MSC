@@ -1,0 +1,24 @@
+.ProfilePage {
+  max-width: 600px;
+  min-width: 400px;
+  width: 60%;
+  margin: 5% auto;
+
+  table {
+    td, th{
+      padding: 3%;
+    }
+
+    td {
+      width: 50%;
+    }
+
+    th{
+      font-size: 1.5em;
+      .EditIcon {
+        padding: 0 1%;
+        float: right;
+      }
+    }
+  }
+}

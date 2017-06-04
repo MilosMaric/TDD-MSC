@@ -1,0 +1,173 @@
+$rasinBlack: #2e1f27;
+$russed: #854d27;
+$deepCarrot: #dd7230;
+$black: #000;
+$sunny: #e4c482;
+
+body{
+	background: url("../bg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  height: 95vh;
+  margin: 0;
+  color: white;
+  font-family: Verdana;
+	width: 100vw;
+}
+
+button {
+  @extend .ElementsClass;
+}
+
+input {
+  @extend .ElementsClass;
+}
+
+select {
+	@extend .ElementsClass;
+	option {
+		font-weight: bold;
+	}
+}
+
+label {
+	color: $sunny;
+	font-size: 1.05em;
+	font-weight: bold;
+	text-align: center;
+}
+
+table {
+	background-color: rgba(46,31,39, 0.9);
+  color: $sunny;
+	border-radius: 10px;
+	border-collapse: separate;
+	border-spacing: 0px;
+	border: 2px groove $sunny;
+	min-width: 100%;
+}
+
+tbody {
+	tr {
+		&:hover {
+	    color: $rasinBlack;
+	    background-color: $sunny;
+			label{
+				color: $rasinBlack;
+		    background-color: $sunny;
+			}
+  	}
+	}
+}
+
+td{
+	@extend .TableCell;
+}
+
+th{
+	@extend .TableCell;
+}
+
+.MainMenu {
+  width: 100%;
+  display: inline-flex;
+  background-color: $rasinBlack;
+  margin-bottom: 2%;
+  justify-content: space-between;
+
+  .MenuItem {
+    padding: 10px;
+    color: $sunny;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 38%;
+
+    &:hover {
+        color: $rasinBlack;
+        border-color: $rasinBlack;
+        background-color: $sunny;
+    }
+  }
+
+  .RightMenuItem {
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+    width: 20%;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 1%;
+
+
+    .ProfileIcon {
+      @extend .RightItem;
+      float: right;
+      margin-right: 5%;
+    }
+
+    .LogIcon {
+      @extend .RightItem;
+      float: right;
+    }
+
+    .RightItem {
+      text-decoration: none;
+      color: $sunny;
+      padding: 0 2%;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover {
+          color: $rasinBlack;
+          border-color: $rasinBlack;
+          background-color: $sunny;
+      }
+      i {
+        font-size: 2em;
+        display: inline;
+      }
+    }
+  }
+}
+
+.AppContent {
+	padding: 0 2%;
+}
+
+.ElementsClass {
+	background-color: $rasinBlack;
+  border-radius: 8px;
+  color: $sunny;
+  font-weight: bold;
+	font-size: 1.05em;
+  padding: 10px;
+  border: 2px groove $sunny;
+
+  &:hover {
+    color: $rasinBlack;
+    border-color: $rasinBlack;
+    background-color: $sunny;
+  }
+
+	&:focus {
+		color: $rasinBlack;
+    border-color: $rasinBlack;
+    background-color: $sunny;
+	}
+}
+
+.TableCell {
+	padding: 0.5%;
+	text-align: center;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.FormButton {
+	width: 40%;
+	margin: 2% 2% 1% 2%;
+}

@@ -1,0 +1,43 @@
+.TrainingPage {
+  padding-top: 3%;
+
+  .ViewContainer{
+    display: grid;
+
+    table {
+      width: 80%;
+      min-width: 500px;
+      margin: 2% auto;
+
+      td {
+        padding: 1%;
+      }
+    }
+
+    button {
+      margin: 0 auto;
+    }
+  }
+
+  .FilterContainer {
+    margin: auto;
+    width: 80%;
+    .CancelFilterContainer {
+      float: right;
+    }
+
+    .DayFilterContainer {
+      float: left;
+    }
+  }
+
+  .AddForm {
+    width: 50%;
+    min-width: 500px;
+    margin: auto;
+    td, th{
+      padding: 1%;
+      width: 50%;
+    }
+  }
+}
